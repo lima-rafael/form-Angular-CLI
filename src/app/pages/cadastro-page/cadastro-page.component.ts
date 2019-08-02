@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from 'src/app/providers/menu.service';
 
 @Component({
   selector: 'app-cadastro-page',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public menu: MenuService) { }
 
   ngOnInit() {
   }
+
+  closeMenu(){
+    this.menu.close();
+  }
+
 
 }

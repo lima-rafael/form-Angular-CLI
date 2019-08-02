@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 //modulos
 import { RoutingModule } from './app.routes';
+import { MenuService } from './providers/menu.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { CadastroPageComponent } from './pages/cadastro-page/cadastro-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
@@ -21,14 +23,15 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     FooterComponent,
     CadastroComponent,
     CadastroPageComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
