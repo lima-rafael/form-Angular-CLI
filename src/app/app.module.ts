@@ -13,6 +13,12 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { CadastroPageComponent } from './pages/cadastro-page/cadastro-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { AlunosComponent } from './components/alunos/alunos.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { AlunosPageComponent } from './pages/alunos-page/alunos-page.component';
+import { AlunoPageComponent } from './pages/aluno-page/aluno-page.component';
+import { AlunoComponent } from './components/aluno/aluno.component';
 
 
 
@@ -24,7 +30,13 @@ import { MenuComponent } from './components/menu/menu.component';
     CadastroComponent,
     CadastroPageComponent,
     ErrorPageComponent,
-    MenuComponent
+    MenuComponent,
+    AlunosComponent,
+    LoginComponent,
+    LoginPageComponent,
+    AlunosPageComponent,
+    AlunoPageComponent,
+    AlunoComponent
   ],
   imports: [
     BrowserModule,

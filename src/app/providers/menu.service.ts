@@ -16,10 +16,16 @@ export class MenuService {
       route: '/'
     },
     {
-      icon: 'fa fa-gamepad',
+      icon: '',
       text: 'Alunos',
       route: '/alunos'
+    },    
+    {
+      icon: '',
+      text: 'Cadastro',
+      route: '/cadastro-aluno'
     }
+
   ]
   constructor() { }
   open() {
